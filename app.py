@@ -1,10 +1,9 @@
-from flask import Flask, render_template, request, Markup
+from flask import Flask, render_template, request, Markup, redirect
 import numpy as np
 import pandas as pd
 import pickle
 import requests
 from utils.disease import disease_dic
-import config
 import pickle
 import io
 import torch
@@ -110,24 +109,20 @@ def index():
 
 @app.route('/disease-detection/')
 def disese_detection():
-     title = 'Kisan++ - Disease Detection'
-
     if request.method == 'POST':
+        file = request.files.get('file')
         if 'file' not in request.files:
             return redirect(request.url)
-        file = request.files.get('file')
         if not file:
-            return render_template('disease.html', title=title)
+            return render_template('disease.html')
         try:
             img = file.read()
-
             prediction = predict_image(img)
-
             prediction = Markup(str(disease_dic[prediction]))
-            return render_template('disease-result.html', prediction=prediction, title=title)
+            return render_template('disease-result.html', prediction=prediction)
         except:
             pass
-    return render_template('disease.html', title=title)
+    return render_template('disease.html')
 
 
 @app.route('/crop-planning/')
@@ -152,7 +147,7 @@ def crop_prediction():
         ph = float(request.form['ph'])
         rainfall = float(request.form['rainfall'])
         city = request.form.get("city")
-        
+
         if weather_fetch(city) != None:
             temperature, humidity = weather_fetch(city)
             data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
@@ -164,9 +159,11 @@ def crop_prediction():
         else:
             return render_template('try_again.html', title=title)
 
-@app.errorhandler(404) 
-def not_found(e): 
-  return render_template("404.html") 
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
+
 
 if __name__ == "__main__":
     app.run()
