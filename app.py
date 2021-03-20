@@ -11,27 +11,13 @@ from torchvision import transforms
 from PIL import Image
 from utils.model import ResNet9
 
-
-def weather_fetch(city_name):
-    api_key = "6ee1dc7bb1bc5a8a16ba813050149c05"
-    base_url = "http://api.openweathermap.org/data/2.5/weather?"
-
-    complete_url = base_url + "appid=" + api_key + "&q=" + city_name
-    response = requests.get(complete_url)
-    x = response.json()
-
-    if x["cod"] != "404":
-        y = x["main"]
-
-        temperature = round((y["temp"] - 273.15), 2)
-        humidity = y["humidity"]
-        return temperature, humidity
-    else:
-        return None
+app = Flask(__name__)
 
 
-crop_recommendation_model = pickle.load(
-    open('Models/model.pkl', 'rb'))
+@app.route('/')
+def index():
+    return render_template("index.html")
+
 
 # -------------Disease Detection -------------
 disease_classes = ['Apple___Apple_scab',
@@ -99,41 +85,53 @@ def predict_image(img, model=disease_model):
     return prediction
 
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return render_template("index.html")
-
-
-@app.route('/disease-detection/')
-def disese_detection():
+@app.route('/disease-detection/', methods=['GET', 'POST'])
+def disease_detection():
     if request.method == 'POST':
-        file = request.files.get('file')
         if 'file' not in request.files:
+            print("No file part")
             return redirect(request.url)
+        file = request.files.get('file')
         if not file:
+            print("here2")
             return render_template('disease.html')
         try:
+            print("Detected")
             img = file.read()
             prediction = predict_image(img)
             prediction = Markup(str(disease_dic[prediction]))
             return render_template('disease-result.html', prediction=prediction)
         except:
             pass
+            print("Exception")
     return render_template('disease.html')
+
+
+def weather_fetch(city_name):
+    api_key = "6ee1dc7bb1bc5a8a16ba813050149c05"
+    base_url = "http://api.openweathermap.org/data/2.5/weather?"
+
+    complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+    response = requests.get(complete_url)
+    x = response.json()
+
+    if x["cod"] != "404":
+        y = x["main"]
+
+        temperature = round((y["temp"] - 273.15), 2)
+        humidity = y["humidity"]
+        return temperature, humidity
+    else:
+        return None
+
+
+crop_recommendation_model = pickle.load(
+    open('Models/model.pkl', 'rb'))
 
 
 @app.route('/crop-planning/')
 def crop_planning():
     return render_template("crop.html")
-
-
-@ app.route('/crop-recommend/')
-def crop_recommend():
-    title = 'Kisan++ - Crop Recommendation'
-    return render_template('crop.html', title=title)
 
 
 @ app.route('/crop-predict/', methods=['POST'])

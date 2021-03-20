@@ -42,16 +42,19 @@
   <section
     style="position: absolute; margin-top: 35%; width: 100%; height: 50%; background-color: #b5fed5; border-radius: 0px 0px 80px 80px;">
     <div class="container center-align" style="padding-top: 11rem;">
-      <div class="file-field input-field">
-        <div class="btn">
-          <span>Upload File</span>
-          <input type="file">
+      <form action="{{ url_for('disease_detection')}}" method="post" enctype=multipart/form-data>
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Upload File</span>
+            <input type="file" name='file'>
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
         </div>
-        <div class="file-path-wrapper">
-          <input class="file-path validate" type="text">
-        </div>
-      </div>
-      <button id="upload-btn" type="submit" class="btn btn-large" style="width: 12rem; font-size:1.1rem">Detect</button>
+        <button id="upload-btn" type="submit" class="btn btn-large"
+          style="width: 12rem; font-size:1.1rem">Detect</button>
+      </form>
     </div>
   </section>
 
