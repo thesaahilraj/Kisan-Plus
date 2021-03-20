@@ -1,6 +1,9 @@
 autopep8==1.5.6
+certifi==2020.12.5
+chardet==4.0.0
 click==7.1.2
 Flask==1.1.2
+idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.3
 joblib==1.0.1
@@ -11,10 +14,12 @@ pickle-mixin==1.0.2
 pycodestyle==2.7.0
 python-dateutil==2.8.1
 pytz==2021.1
+requests==2.25.1
 scikit-learn==0.24.1
 scipy==1.6.1
 six==1.15.0
 sklearn==0.0
 threadpoolctl==2.1.0
 toml==0.10.2
+urllib3==1.26.4
 Werkzeug==1.0.1
