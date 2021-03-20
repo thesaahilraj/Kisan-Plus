@@ -7,6 +7,16 @@
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+input[type="text"]:not(.browser-default) {
+  color: #00b859;
+}
+
+.in {
+  position: absolute;
+  z-index: 10;
+  top: 80%;
+}
+
 .container-fluid {
   width: 100%;
 }
