@@ -73,7 +73,7 @@ def crop_prediction():
             final_prediction = my_prediction[0]
             print()
             print("Final Prediction", final_prediction)
-            return render_template('crop-result.html', prediction=final_prediction, title=title)
+            return render_template('crop-result.html', prediction=final_prediction.capitalize(), title=title)
         else:
             return render_template('try_again.html', title=title)
 

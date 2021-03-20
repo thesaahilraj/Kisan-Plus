@@ -269,3 +269,10 @@ nav li a {
   margin-left: 0%;
   z-index: -4;
 }
+
+.pre_txt {
+  position: absolute;
+  margin-top: 17%;
+  width: 40%;
+  margin-left: 10%;
+}
