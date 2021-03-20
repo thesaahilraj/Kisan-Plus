@@ -10,7 +10,7 @@ Jinja2==2.11.3
 joblib==1.0.1
 MarkupSafe==1.1.1
 numpy==1.19.5
-pandas==1.2.3
+pandas==1.1.5
 pickle-mixin==1.0.2
 Pillow==8.1.2
 pycodestyle==2.7.0
