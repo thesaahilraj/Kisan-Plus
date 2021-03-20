@@ -89,14 +89,11 @@ def predict_image(img, model=disease_model):
 def disease_detection():
     if request.method == 'POST':
         if 'file' not in request.files:
-            print("No file part")
             return redirect(request.url)
         file = request.files.get('file')
         if not file:
-            print("here2")
             return render_template('disease.html')
         try:
-            print("Detected")
             img = file.read()
             prediction = predict_image(img)
             prediction = Markup(str(disease_dic[prediction]))
