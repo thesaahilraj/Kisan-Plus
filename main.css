@@ -166,7 +166,33 @@ nav li a{
     margin-left: 85%;
     z-index: -3;
 }
-#scrollToTopBtn {
+
+
+  .btnn3{
+    
+        position:absolute;
+        margin-top: 70%;
+        width: 100%;
+        margin-left: 70%;
+        z-index: 10;
+
+  }
+
+  .con_4{
+    position:absolute;
+    margin-top: 75%;
+    width: 100%;
+    margin-left: 0%;
+    z-index: -3;
+}
+.f_logo1{
+    position:absolute;
+    margin-top: 85%;
+    width: 15%;
+    margin-left: 5%;
+    z-index: -3;
+}
+.scroll{
     background-color: #099445;
     border: none;
     border-radius: 50%;
@@ -180,4 +206,64 @@ nav li a{
     /* width: 5%; */
     margin-left: 85%;
     z-index: -3;
-  }
+}
+.scroll1{
+    background-color: #099445;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 78px;
+    width: 78px;
+    position:absolute;
+    margin-top: 90%;
+    /* width: 5%; */
+    margin-left: 85%;
+    z-index: -3;
+}
+.con_5{
+    position:absolute;
+    margin-top: 25%;
+    width: 100%;
+    margin-left: 0%;
+    z-index: -3;
+}
+.btnn4{
+    
+    position:absolute;
+    margin-top: 52%;
+    width: 100%;
+    margin-left: 47%;
+    z-index: 10;
+
+}
+.scroll2{
+    background-color: #099445;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 78px;
+    width: 78px;
+    position:absolute;
+    margin-top: 65%;
+    /* width: 5%; */
+    margin-left: 85%;
+    z-index: -3;
+}
+.f_logo2{
+    position:absolute;
+    margin-top: 60%;
+    width: 15%;
+    margin-left: 5%;
+    z-index: -3;
+}
+.con_6{
+    position:absolute;
+    margin-top: 50%;
+    width: 100%;
+    margin-left: 0%;
+    z-index: -4;
+}
