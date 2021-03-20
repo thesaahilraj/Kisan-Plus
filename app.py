@@ -154,6 +154,9 @@ def crop_prediction():
         else:
             return render_template('try_again.html', title=title)
 
+@app.route('/sell/')
+def sell():
+    return render_template("sell.html")
 
 @app.errorhandler(404)
 def not_found(e):

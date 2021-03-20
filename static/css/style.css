@@ -1,0 +1,47 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+/* navbar */
+.custom-center {
+	margin: auto;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+	font-weight: 500;
+}
+.navbar {
+	background-color: #000;
+	transition: background-color 2s ease 0s;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: orange;
+	border-color: orange;
+}
+.navbar ul li {
+	margin: 0 20px 0 20px;
+}
+.navbar ul li:hover {
+	color: orange;
+}
+.title {
+	color: #000;
+	text-align: center;
+	border-bottom: 2px solid #fff;
+	display: block;
+	font-weight: 500;
+	font-size: 3em;
+	margin-top: 60px;
+}
+.page-footer {
+	background: #000;
+	color: #fff;
+	margin-top: 20px;
+}
+.page-footer a {
+	color: orange;
+}

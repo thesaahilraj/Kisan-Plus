@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KISAN++</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link href="/static/css/cart.css" rel="stylesheet">
+    <script src="/static/js/script.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/css/nav.css">
+</head>
+
+<body>
+<!-- ******NAVBAR******** -->
+<nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"> </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/crop-planning/">Crop Planning</a></li>
+        <li><a href="/disease-detection/">Disease Detection</a></li>
+        <li><a href="/sell/">Sell</a></li>
+        <li><a href="#">Buy</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- ******BANNER******** -->
+    <img class="logo" style="margin-top: -69px;"src="/static/assets/Group 115.png" alt="">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- start items -->
+    <section class="cart">
+        <div class="container">
+            <div class="title">ITEMS</div>
+                    <button id="scrollbottom" class="btn btn-primary" type="button" onClick="document.getElementById('print').scrollIntoView();"><i class="fa fa-arrow-down"></i></button>
+            <div class="row">
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Tomato (1kg)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 20</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item1.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Spinach (2-Bunch)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 15</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item2.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Brinjal (2)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 30</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item8.jpeg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Banana (500g)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 30</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item4.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Potato (500g)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 10</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item5.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Okra (500g)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 20</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item6.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Corn (1)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 20</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item7.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Onion (500g)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 30</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <!-- Broken Image -->
+                    <img class="shop-item-image img-responsive" src="/static/assets/item9.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Apple (1kg)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 200</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item10.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Watermelon (1 Piece)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 40</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4 profile shop-item text-center">
+                    <div data-aos="zoom-in">
+                    <img class="shop-item-image img-responsive" src="/static/assets/item11.jpg"onError="this.onerror=null;this.src='images/noimage.jpg';">
+                    </div>
+                    <h2><span class="shop-item-title">Muskmelon (1kg)</span></h2>
+                    <div class="shop-item-details">
+                        <h3><span class="shop-item-price">₹ 35</span></h3>
+                        <button class="btn btn-primary shop-item-button" type="button">SELL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Cart Setup -->
+    <div class="printallofthis">
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total: </strong>
+            <span class="cart-total-price">₹ 0</span>
+        </div>
+    </div>
+        <button id="print" class="btn btn-primary" type="button"onclick="window.print();" >PRINT INVOICE</button>
+        <button id="print" class="btn btn-primary btn-purchase" type="button">SELL</button>
+    </section>
+
+    <!-- bootstrap -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- end bootstrap -->
+
+</body>
+
+</html>

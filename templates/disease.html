@@ -18,12 +18,12 @@
   <!-- ******NAVBAR******** -->
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo"> </a>
+      <a href="/" class="brand-logo"> </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
         <li><a href="/crop-planning/">Crop Planning</a></li>
         <li><a href="/disease-detection/">Disease Detection</a></li>
-        <li><a href="#">Sell</a></li>
+        <li><a href="/sell/">Sell</a></li>
         <li><a href="#">Buy</a></li>
       </ul>
     </div>
@@ -34,7 +34,8 @@
   <img class="pic" src="/static/assets/b_pic1.png" alt="">
   <img class="logo" src="/static/assets/Group 115.png" alt="">
   <div class="b_txt">
-    <p>Find out the most suitable crop to grow in your farm</p>
+    <p>KISAN++ will help farmers in reporting diseases that got their crops infected and various cures of the same.
+      <br>With Kisan++ in use crop diseases at shall stay bay!</p>
   </div>
 
   <!-- ******SECTION -1******** -->
@@ -43,6 +44,7 @@
     style="position: absolute; margin-top: 35%; width: 100%; height: 50%; background-color: #b5fed5; border-radius: 0px 0px 80px 80px;">
     <div class="container center-align" style="padding-top: 11rem;">
       <form action="{{ url_for('disease_detection')}}" method="post" enctype=multipart/form-data>
+        <h4 style="overflow-x: unset; margin-bottom: 10px;"><b>Upload picture of your crop here.</b></h4>
         <div class="file-field input-field">
           <div class="btn">
             <span>Upload File</span>
