@@ -9,6 +9,21 @@
 - Additionally, we also have the option for farmers to buy various fertilizers, pesticides, & insecticides.
 The farmers shall also have the option to directly sell their yields to the consumer (B2C) at the price which will be set by them.
 
+## How to use
+- Crop Recommendation
+![Kisan++ Video](https://user-images.githubusercontent.com/75525185/111887391-d5feb180-89fa-11eb-8982-d7c7187734fd.gif)
+
+- Disease Detection System
+
+
+- Selling crops
+![Kisan++ Video (2)](https://user-images.githubusercontent.com/75525185/111887565-d3e92280-89fb-11eb-9f27-7134f51376fa.gif)
+
+- Buying Agricultural Utilities
+![Kisan++ Video (3)](https://user-images.githubusercontent.com/75525185/111887650-7b665500-89fc-11eb-8058-2f2227931ddb.gif)
+
+
+
 ## DataSet
 - [Crop recommendation dataset ](https://www.kaggle.com/atharvaingle/crop-recommendation-dataset)
 - [Disease detection dataset](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset)
