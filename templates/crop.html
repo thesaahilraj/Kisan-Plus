@@ -41,11 +41,11 @@
   <section
     style="position: absolute; margin-top: 35%; width: 100%; height: 90%; background-color: #b5fed5; border-radius: 0px 0px 80px 80px;">
     <div class="container" style="padding-top: 3rem;">
-      <form id="crop-predict">
+      <form id="crop-predict" action="{{ url_for('crop_prediction')}}" method="POST">
         <div class="row">
           <div class="input-field col l6">
             <span style="color: #00B859;font-weight: 600;font-size: 1.25rem;">Nitrogen</span><br><br>
-            <input type="text" name="city" id="nitrogen" style="border: 3px solid #00B859;border-radius: 10px">
+            <input type="text" name="nitrogen" id="nitrogen" style="border: 3px solid #00B859;border-radius: 10px">
           </div>
           <div class="input-field col l6">
             <span style="color: #00B859;font-weight: 600;font-size: 1.25rem;">Potassium</span><br><br>
@@ -73,7 +73,8 @@
             <input type="text" name="city" id="city" style="border: 3px solid #00B859;border-radius: 10px">
           </div>
         </div>
-        <a id="predict-btn" class="btn btn-large right" style="width: 12rem; font-size:1.1rem">Predict</a>
+        <button id="predict-btn" type="submit" class="btn btn-large right"
+          style="width: 12rem; font-size:1.1rem">Predict</button>
       </form>
     </div>
   </section>
