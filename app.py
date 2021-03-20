@@ -158,6 +158,10 @@ def crop_prediction():
 def sell():
     return render_template("sell.html")
 
+@app.route('/buy/')
+def buy():
+    return render_template("buy.html")
+
 @app.errorhandler(404)
 def not_found(e):
     return render_template("404.html")
