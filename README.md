@@ -1,4 +1,4 @@
-# Kisan-Plus-an ALL-IN-ONE agricultural intelligence web application, a perfect guide to farmers and help them through the entire process of farming.
+# Kisan++ an ALL-IN-ONE agricultural intelligence web application, a perfect guide to farmers and help them through the entire process of farming.
 
 Want to get THE perfect yield from your crop field?
 Wish to know what's wrong with the crop/plant?
