@@ -1,4 +1,5 @@
-# Kisan++ - ALL-IN-ONE agricultural intelligence web application, a perfect guide to farmers and help them through the entire process of farming.
+# [Kisan++](https://kisaanpp.herokuapp.com/)
+## ALL-IN-ONE Agricultural Intelligence Web application, a perfect guide to farmers and help them through the entire process of farming.
 
 - Want to get THE perfect yield from your crop field?
 - Wish to know what's wrong with the crop/plant?
@@ -14,7 +15,7 @@ The farmers shall also have the option to directly sell their yields to the cons
 
 ## DEPLOYMENT
 
-#### This website is deployed at [Heroku] and you can access it [here](https://kisaanpp.herokuapp.com/)
+#### This website is deployed at [Heroku](heroku.com) and you can access it [here](https://kisaanpp.herokuapp.com/)
 
 # Built with
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
