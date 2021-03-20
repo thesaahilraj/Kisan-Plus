@@ -11,16 +11,16 @@ The farmers shall also have the option to directly sell their yields to the cons
 
 ## How to use
 - Crop Recommendation
-![Kisan++ Video](https://user-images.githubusercontent.com/75525185/111887391-d5feb180-89fa-11eb-8982-d7c7187734fd.gif)
+![Crop-Recommendation](https://user-images.githubusercontent.com/75525185/111887391-d5feb180-89fa-11eb-8982-d7c7187734fd.gif)
 
 - Disease Detection System
-
+![Disease-detection](https://media.giphy.com/media/Povw9YU510DTObyPBY/giphy.gif)
 
 - Selling crops
-![Kisan++ Video (2)](https://user-images.githubusercontent.com/75525185/111887565-d3e92280-89fb-11eb-9f27-7134f51376fa.gif)
+![Selling-crops](https://user-images.githubusercontent.com/75525185/111887565-d3e92280-89fb-11eb-9f27-7134f51376fa.gif)
 
 - Buying Agricultural Utilities
-![Kisan++ Video (3)](https://user-images.githubusercontent.com/75525185/111887650-7b665500-89fc-11eb-8058-2f2227931ddb.gif)
+![Buying](https://user-images.githubusercontent.com/75525185/111887650-7b665500-89fc-11eb-8058-2f2227931ddb.gif)
 
 
 
