@@ -11,12 +11,12 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/disease-detection')
+@app.route('/disease-detection/')
 def disese_detection():
     return render_template("disease.html")
 
 
-@app.route('/crop-planning')
+@app.route('/crop-planning/')
 def crop_planning():
     return render_template("crop.html")
 
